@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!--Meta tags e SEO se precisar:-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Arthur"/>
+    <meta name="keywords" content="Calculadora,cálcular,dividir,somar,subtrair,multiplicar"/>
+    <meta name="description" content="Calculadora para facilitar sua vida :)"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/a7cf753026.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" 
+    rel="stylesheet">   
+    <link rel="stylesheet" href="scss/style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+
+    <!--Sessão do header-->
+    <header>
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    <img alt="Alpha" src="images/alphaazul.png">
+                    <h2>Calculadora.Alpha</h2>
+                </div>
+                <nav class="desktop">
+                    <ul>
+                        <li><a title="Arthur" href="https://github.com/ArthurBandeira01"><i class="fas fa-user"></i> Arthur Bandeira</a></li>
+                        <li><a title="Contato" href="#"><i class="fas fa-phone-volume"></i> Contato: (51) 99204-7788</a></li>
+                    </ul>
+                </nav><!--desktop-->
+
+                <nav class="mobile">
+                    <div class="botao-menu-mobile">
+                    <h3><i class="fas fa-bars"></i></h3>
+                    </div><!--botão-menu-mobile-->
+                    <ul>
+                        <li><a title="Arthur" href="https://github.com/ArthurBandeira01"><i class="fas fa-user"></i> Arthur Bandeira</a></li>
+                        <li><a title="Contato" href="#"><i class="fas fa-phone-volume"></i> Contato: (51) 99204-7788</a></li>
+                    </ul>
+                </nav><!--mobile-->
+            </div><!--header-->
+            <div class="clear"></div>
+        </div><!--container-->
+    </header>
+
+    <!--Fim do header-->
+    
+    <!--Sessão Principal-->
+    <section class="calculadora">
+        <div class="container">
+            <div class="line"></div>
+            <h2>CALCULADORA <i class="fas fa-calculator"></i></h2>
+            <div class="calculo">
+                <form method="POST" action="calculadora.php">
+                    <input type="number" class="calculo-numero" name="numero1" required>
+                    <br>
+                    <input type="text" class="calculo-numero" name="operacao" required>
+                    <br>
+                    <input type="number" class="calculo-numero" name="numero2"required>
+                    <br>
+                    <button type="submit">Calcular <i class="fas fa-share"></i></button>
+                </form>
+            </div><!--calculo-->
+
+            <!--Rodapé-->
+
+        <footer>
+            <p>Desenvolvido por Arthur Bandeira - 
+            <a href="https://www.linkedin.com/in/arthur-bandeira-da-silva/" target="_blank"><i class="fab fa-linkedin"></i></a></p>
+        </footer>
+
+    <!--Fim rodapé-->
+
+        </div><!--container-->    
+    </section><!--calculadora-->
+    <!--Fim da Sessão-->
+
+    <!--Scripts-->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/response.js"></script>
+
+    <!--Fim sripts-->
+
+</body>
+</html>
